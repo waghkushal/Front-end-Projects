@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: pink;
+
+
+    .likeBtn {
+        outline: none;
+        cursor: pointer;
+        background-color: rgb(238, 55, 86);
+        color: white;
+        border: none;
+        border-radius: 0.4rem;
+        width: 8rem;
+        padding: 0.5rem;
+        transition: 0.5s all;
+        @include flex();
+
+        .image {
+            height: 1rem;
+            transition: 0.5s all;
+            display: none;
+        }
+
+        .text {
+            color: white;
+            transition: 0.5s all;
+            font-size: 1.2rem;
+            display: inline-block;
+        }
+
+
+    }
+
+    .likeBtn:hover {
+        transform: scale(1.22);
+
+        .text {
+            transform: translate(0.7rem, 0rem);
+        }
+
+        .image {
+            transform: translate(-0.5rem, 0rem);
+            display: block;
+        }
+
+
+
+
+    }
+
+    .shakeBtn {
+        transform: rotate(10deg);
+    }
+
+    .count {
+        transform: translate(5rem);
+        color: rgb(151, 29, 49);
+        font-size: 1.3rem;
+    }
+
+}

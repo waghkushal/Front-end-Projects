@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: pink;
+}
+
+body .likeBtn {
+  outline: none;
+  cursor: pointer;
+  background-color: #ee3756;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  width: 8rem;
+  padding: 0.5rem;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .likeBtn .image {
+  height: 1rem;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  display: none;
+}
+
+body .likeBtn .text {
+  color: white;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+body .likeBtn:hover {
+  -webkit-transform: scale(1.22);
+          transform: scale(1.22);
+}
+
+body .likeBtn:hover .text {
+  -webkit-transform: translate(0.7rem, 0rem);
+          transform: translate(0.7rem, 0rem);
+}
+
+body .likeBtn:hover .image {
+  -webkit-transform: translate(-0.5rem, 0rem);
+          transform: translate(-0.5rem, 0rem);
+  display: block;
+}
+
+body .shakeBtn {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+body .count {
+  -webkit-transform: translate(5rem);
+          transform: translate(5rem);
+  color: #971d31;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=style.css.map */
